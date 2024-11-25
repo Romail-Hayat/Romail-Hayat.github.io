@@ -1442,5 +1442,18 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script type="text/javascript" src="https://romail-hayat.github.io/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.9" id="elementor-frontend-js"></script>
 <script type="text/javascript" src="https://romail-hayat.github.io/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.25.3" id="pro-elements-handlers-js"></script>
 
+<script>
+  // Wait until the document is fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select all <a> (anchor) elements on the page
+    document.querySelectorAll('a').forEach(function(link) {
+      // Set the 'target' attribute to '_blank' to open links in a new tab
+      link.setAttribute('target', '_blank');
+      // Optional: Add 'rel' attribute for security
+      link.setAttribute('rel', 'noopener noreferrer');
+    });
+  });
+</script>
+
 </body>
 </html>
